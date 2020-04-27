@@ -25,8 +25,8 @@ void* sum_arr(void* arg){
   for(int i=thread_part*(size_arr/4) ;i<(thread_part + 1)*(size_arr/4) ;i++){
     sum[thread_part] += arr[i];
   }
-  Serial.print("Pthread: Executing on core ");
-  Serial.println(xPortGetCoreID());
+ // Serial.print("Pthread: Executing on core ");
+  //Serial.println(xPortGetCoreID());
 }
 void setup() {
 
